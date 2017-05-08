@@ -3,7 +3,7 @@
  * This example shows sending a message using PHP's mail() function.
  */
 
-require 'PHPMailer-master/PHPMailerAutoload.php';
+require '../PHPMailerAutoload.php';
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer;
