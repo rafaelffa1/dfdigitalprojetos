@@ -42,7 +42,7 @@ $mail->Debugoutput = 'html';
 //Set the hostname of the mail server
 $mail->Host = "mail.dfdigitalprojetos.com";
 //Set the SMTP port number - likely to be 25, 465 or 587
-$mail->Port = 25;
+$mail->Port = 465;
 //Whether to use SMTP authentication
 $mail->SMTPAuth = true;
 //Username to use for SMTP authentication
