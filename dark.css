@@ -1,0 +1,131 @@
+/******************************************
+    File Name: dark.css
+    Template Name: HomeStyle
+    Created By: Show WP Team
+    Envato Profile: http://themeforest.net/user/wordpressshowcase
+    Website: https://showwp.com
+    Version: 1.0
+    Support: wordpressshowcasecom@gmail.com
+/******************************************/
+
+.banner h3,
+.banner,
+.page-title,
+.comments .media-list li,
+#sidebar .widget,
+.header,
+.dropdown-menu,
+.header.affix,
+.blog-desc,
+.topfooter,
+.newsletter-widget .form-control,
+.blog-bottom,
+.post-padding .panel,
+.post-padding .panel-body,
+.shop-item:hover .shop-meta li,
+.section {
+    background-color: #000000;
+}
+
+blockquote,
+.page-title.lb,
+.accordion-toggle-2 .panel,
+.accordion-toggle-2 .panel-heading,
+.contact_form .form-control,
+.contact-details li i,
+.footer,
+.shop-item,
+.cat-boxes,
+.section.lb {
+    background-color: #212121;
+}
+
+#sidebar-fix,
+#vertical .navbar-default,
+#vertical .navbar-default .dropdown-menu,
+.my_featureRow,
+.emtrycart,
+.checkout-tab .form-control,
+.table tr,
+.tab-style-1 .nav-tabs > li:hover > a,
+.tab-style-1 .nav-tabs > li.active > a,
+.accordion-toggle-2 .panel-title,
+.accordion-toggle-2 .panel-heading a:hover,
+.accordion-toggle-2 .panel-heading a:focus,
+.accordion-toggle-2 .panel-heading a,
+.accordion-toggle-2 .panel-heading,
+.accordion-toggle-2 .panel-heading a {
+    border-color: #212121 !important;
+    background-color: #212121 !important;
+    color: #c9c9c9 !important;
+}
+
+.comments .media-list li,
+.accordion-toggle-2 .panel,
+.accordion-toggle-2 .panel-heading,
+.contact_form .form-control,
+hr,
+.portfolio-content .pdetail,
+.tab-style-1 .tab-content,
+.contact-details li i,
+.related-posts .entry,
+.orderbottom,
+.orderbody,
+.header .widget-title hr,
+#custom-search-input .form-control,
+.shopcart .table > thead > tr > th,
+.shopcart .table > tbody > tr > th,
+.shopcart .table > tfoot > tr > th,
+.shopcart .table > tbody > tr > td,
+.shopcart .table > tfoot > tr > td,
+.dropdown-mega > li,
+.dropdown-menu > li,
+.shop-meta li,
+.shop-item {
+    border-color: #313131 !important;
+}
+
+.pricing-box-08.white-style .my_feature p,
+a,
+.blog-desc h3 a,
+.blog-desc h3,
+.shop-desc h3 a,
+.shop-desc h3,
+body,
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #c9c9c9;
+}
+
+.orderbody a,
+.shopcart h4,
+.shopcart a,
+.checkout-tab .widget-title h4,
+.checkout-tab label,
+.related-posts .entry p a,
+.shopcartmenu li h3,
+.dropdown-menu .table h4 a,
+.shopcart .text-center h4,
+.dropdown-menu .table h4,
+.navbar-right .dropdown-menu li:hover a,
+.yamm .dropdown.yamm-fw .dropdown-menu li:hover a,
+.yamm .dropdown.yamm-fw .dropdown-menu,
+.dropdown-mega > li > a,
+.dropdown-menu > li > a {
+    color: #c9c9c9 !important;
+}
+
+.header table tr:hover,
+#custom-search-input .form-control,
+.navbar-right .dropdown-menu li:hover,
+.navbar-right .dropdown-menu,
+.yamm .dropdown.yamm-fw .dropdown-menu li:hover,
+.yamm .dropdown.yamm-fw .dropdown-menu {
+    background-color: #000000 !important;
+}
