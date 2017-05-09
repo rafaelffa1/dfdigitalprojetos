@@ -50,7 +50,7 @@ $mail->Username = "contato@dfdigitalprojetos.com";
 //Password to use for SMTP authentication
 $mail->Password = "Command@2017";
 //Set who the message is to be sent from
-$mail->setFrom( 'ribeirocomunicacoes@yahoo.com.br' , 'Site DF Digital');
+$mail->setFrom( 'contato@dfdigitalprojetos.com' , 'Site DF Digital');
 //Set an alternative reply-to address
 $mail->addReplyTo('replyto@example.com', 'First Last');
 //Set who the message is to be sent to
