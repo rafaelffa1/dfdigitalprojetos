@@ -11,22 +11,22 @@ date_default_timezone_set('Etc/UTC');
 
 require '../PHPMailerAutoload.php';
 
-// $target_dir = "projetosenviados/";
-// $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-// $uploadOk = 1;
-// $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+$target_dir = "projetosenviados/";
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$uploadOk = 1;
+$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 
-// if ($uploadOk == 0) {
-//     echo "Sorry, your file was not uploaded.";
+if ($uploadOk == 0) {
+    echo "Sorry, your file was not uploaded.";
 
-// } else {
-// echo $_FILES["fileToUpload"]["tmp_name"];
-//     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-//         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-//     } else {
-//         echo "Sorry, there was an error uploading your file.";
-//     }
-// }
+} else {
+echo $_FILES["fileToUpload"]["tmp_name"];
+    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+    } else {
+        echo "Sorry, there was an error uploading your file.";
+    }
+}
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer;
@@ -36,7 +36,7 @@ $mail->isSMTP();
 // 0 = off (for production use)
 // 1 = client messages
 // 2 = client and server messages
-$mail->SMTPDebug = 0;
+$mail->SMTPDebug = 2;
 //Ask for HTML-friendly debug output
 $mail->Debugoutput = 'html';
 //Set the hostname of the mail server
@@ -72,14 +72,20 @@ $mail->Body = "
 <table border='1' style='width:100%''>
   <tr>
     <td>Nome</td>
-    <td>Telefone</td>
     <td>Email</td>
+    <td>Tamanho da letra</td>
+    <td>Profundidade da Letra</td>
+    <td>Nome da fonte</td>
+    <td>Tipo da letra</td>
     <td>Mensagem</td>
   </tr>
   <tr>
     <td> " . $nome_email .  " </td>
     <td> " . $form['telefone'] . " </td>
-    <td> " . $form['email'] . " </td>
+    <td> " . $form['tamanholetra'] . " </td>
+    <td> " . $form['profundidadeletra'] . " </td>
+    <td> " . $form['nomefonte'] . " </td>
+    <td> " . $form['tipodeletras'] . " </td>
     <td> " . $mensagem_email . "</td>
   </tr>
 </table>
