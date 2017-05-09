@@ -57,6 +57,7 @@ $mail->addReplyTo('replyto@example.com', 'First Last');
 $mail->addAddress( $form['emaildestinatario'] );
 $mail->addAddress( 'ribeirocomunicacoes@yahoo.com.br' );
 $mail->addAddress( 'rafael.ferreira.felix.almeida@gmail.com' );
+$mail->addAddress( 'dfdigitalcontato@gmail.com');
 
 //Set the subject line
 $mail->Subject = 'Contato do site DF DIGITAL';
