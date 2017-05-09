@@ -36,7 +36,7 @@ $mail->isSMTP();
 // 0 = off (for production use)
 // 1 = client messages
 // 2 = client and server messages
-$mail->SMTPDebug = 2;
+$mail->SMTPDebug = 0;
 //Ask for HTML-friendly debug output
 $mail->Debugoutput = 'html';
 //Set the hostname of the mail server
@@ -95,7 +95,7 @@ $mail->IsHTML(true);
 
 $mail->AltBody = 'Contato do site';
 //Attach an image file
- //$mail->addAttachment($target_file);
+$mail->addAttachment($target_file);
 
 //send the message, check for errors
 if (!$mail->send()) {
