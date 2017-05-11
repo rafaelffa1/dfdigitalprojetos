@@ -3094,3 +3094,9 @@
     }
 }
 
+.btnliga{
+    width: 100%;
+    font-size: 19px;
+    color: #fff;
+    border-radius: 5px;
+}
