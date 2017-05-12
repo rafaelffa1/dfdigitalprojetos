@@ -183,7 +183,7 @@
 
                             <label for="example-text-input" class="col-2 col-form-label">Telefone</label>
                             <div class="col-10">
-                                <input class="form-control" name="telefone" type="text" placeholder="Telefone">
+                                <input class="form-control telefonemask" name="telefone" type="text" placeholder="Telefone">
                             </div>
 
                             <label for="example-text-input" class="col-2 col-form-label">Email</label>
@@ -236,7 +236,7 @@
 
             <label for="example-text-input" class="col-2 col-form-label">Telefone</label>
             <div class="col-10">
-                <input class="form-control" name="telefone" type="text" placeholder="Telefone">
+                <input class="form-control telefonemask" name="telefone" type="text" placeholder="Telefone">
             </div>
 
             <label for="example-text-input" class="col-2 col-form-label">Email</label>
@@ -531,24 +531,16 @@
 
 <!-- Main Scripts-->
 <script src="js/jquery.js"></script>
+<script src="js/jquery.mask.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/hover.js"></script>    
 <script src="js/banner-grid.js"></script>
 
-<!-- REVOLUTION JS FILES -->
-<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-<!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->  
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+<script type="text/javascript">
+    $('.telefonemask').mask('99999-9999');
+</script>
 
 
 <script type="text/javascript">
@@ -578,7 +570,6 @@ function loadedBigImg() {
 }
 
 </script>
-
 
 
 <script type="text/javascript">

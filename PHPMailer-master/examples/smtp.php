@@ -58,7 +58,7 @@ $mail->addAddress( $form['emaildestinatario'] );
 $mail->addAddress( 'rafael.ferreira.felix.almeida@gmail.com' );
 $mail->addAddress( 'dfdigitalcontato@gmail.com');
 //Set the subject line
-$mail->Subject = 'Contato do site DF DIGITAL';
+$mail->Subject = 'Fale conosco - DFDIGITAL';
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
 // $mail->msgHTML(file_get_contents('contents.html'), dirname(__FILE__));
