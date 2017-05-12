@@ -68,20 +68,20 @@ $mensagem_email = utf8_decode($form['mensagem']);
 $nome_email = utf8_decode($form['nome']);
 
 $mail->Body = "
-<table border='1' style='width:100%''>
-  <tr>
-    <td>Nome</td>
-    <td>Telefone</td>
-    <td>Email</td>
-    <td>Mensagem</td>
-  </tr>
-  <tr>
-    <td> " . $nome_email .  " </td>
-    <td> " . $form['telefone'] . " </td>
-    <td> " . $form['email'] . " </td>
-    <td> " . $mensagem_email . "</td>
-  </tr>
-</table>
+
+  <label><strong>Nome:</strong></label><br>
+  <span>" . $nome_email . "</span>
+  <br><br>
+  <label><strong>Telefone:</strong></label><br>
+  <span>" . $form['telefone'] . "</span>
+  <br><br>
+  <label><strong>Email:</strong></label><br>
+  <span>" . $form['email'] . "</span>
+  <br><br>
+  <label><strong>Mensagem:</strong></label><br>
+  <span>" . $mensagem_email ."</span>
+
+
 ";
 
 $mail->IsHTML(true);
