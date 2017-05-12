@@ -54,7 +54,7 @@ $mail->setFrom( 'contato@dfdigitalprojetos.com' , 'Site DF Digital');
 //Set an alternative reply-to address
 $mail->addReplyTo('replyto@example.com', 'First Last');
 //Set who the message is to be sent to
-$mail->addAddress( $form['emaildestinatario'] );
+//$mail->addAddress( $form['emaildestinatario'] );
 $mail->addAddress( 'rafael.ferreira.felix.almeida@gmail.com' );
 $mail->addAddress( 'dfdigitalcontato@gmail.com');
 //Set the subject line

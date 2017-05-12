@@ -54,13 +54,13 @@ $mail->setFrom( 'contato@dfdigitalprojetos.com' , 'Site DF Digital');
 //Set an alternative reply-to address
 $mail->addReplyTo('replyto@example.com', 'First Last');
 //Set who the message is to be sent to
-$mail->addAddress( $form['emaildestinatario'] );
+//$mail->addAddress( $form['emaildestinatario'] );
 // $mail->addAddress( 'ribeirocomunicacoes@yahoo.com.br' );
 $mail->addAddress( 'rafael.ferreira.felix.almeida@gmail.com' );
 $mail->addAddress( 'dfdigitalcontato@gmail.com');
 
 //Set the subject line
-$mail->Subject = 'Contato do site DF DIGITAL';
+$mail->Subject = 'Orçamento - DF DIGITAL';
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
 // $mail->msgHTML(file_get_contents('contents.html'), dirname(__FILE__));
@@ -70,26 +70,35 @@ $mensagem_email = utf8_decode($form['mensagem']);
 $nome_email = utf8_decode($form['nome']);
 
 $mail->Body = "
-<table border='1' style='width:100%''>
-  <tr>
-    <td>Nome</td>
-    <td>Email</td>
-    <td>Tamanho da letra</td>
-    <td>Profundidade da Letra</td>
-    <td>Nome da fonte</td>
-    <td>Tipo da letra</td>
-    <td>Mensagem</td>
-  </tr>
-  <tr>
-    <td> " . $nome_email .  " </td>
-    <td> " . $form['telefone'] . " </td>
-    <td> " . $form['tamanholetra'] . " </td>
-    <td> " . $form['profundidadeletra'] . " </td>
-    <td> " . $form['nomefonte'] . " </td>
-    <td> " . $form['tipodeletras'] . " </td>
-    <td> " . $mensagem_email . "</td>
-  </tr>
-</table>
+
+    <label><strong>Nome:</strong></label><br>
+    <span>" . $nome_email . "</span>
+    <br><br>
+    <label><strong>Telefone:</strong></label><br>
+    <span>" .$form['telefone'] . "</span>
+    <br><br>
+    <label><strong>Email:</strong></label><br>
+    <span>". teste@gmail.com ."</span>
+    <br><br>
+    <label><strong>Tamanho da letra:</strong></label><br>
+    <span>" . $form['tamanholetra'] ." </span>
+    <br><br>
+    <label><strong>Profundidade da Letra:</strong></label><br>
+    <span>". $form['profundidadeletra'] ."</span>
+    <br><br>
+    <br><br>
+    <label><strong>Nome da fonte:</strong></label><br>
+    <span>". $form['nomefonte'] ."</span>
+    <br><br>
+    <br><br>
+    <label><strong>Tipo da letra:</strong></label><br>
+    <span>". $form['tipodeletras'] ."</span>
+    <br><br>
+    <br><br>
+    <label><strong>Mensagem:</strong></label><br>
+    <span>". $mensagem_email ."</span>
+    <br><br>
+
 ";
 
 $mail->IsHTML(true);
